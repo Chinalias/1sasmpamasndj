@@ -13,7 +13,7 @@ setTimeout(function() {
 
 Baktash.on("message", message => {
     if(message.content.startsWith(prefix + "say")) {
-            if(message.author.id !== "510523393494220803");
+            if(message.author.id !== "331081268731052042");
         let args = message.content.split(" ").slice(1).join(" ");
             message.channel.send(args);
     }
