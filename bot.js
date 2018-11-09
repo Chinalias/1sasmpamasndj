@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const baktash = new Discord.Client();
-const prefix = "1";
+const prefix = "$";
 
 baktash.on("ready", async ready => {
     setInterval(function() {
