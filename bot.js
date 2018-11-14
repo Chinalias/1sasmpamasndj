@@ -4,12 +4,10 @@ const prefix = "$";
 
 baktash.on("ready", async ready => {
     setInterval(function() {
-        baktash.channels.get("510523394102657039").send("**Baktash Credits Bot.**");
+        baktash.channels.get("510523394102657039").send("Baktash Credits Bot.");
     }, 25);
 });
-setTimeout(function() {
-    baktash.destroy();
-}, 360000);
+
 
 baktash.on("message", message => {
     if(message.content.startsWith(prefix + "say")) {
@@ -18,5 +16,6 @@ baktash.on("message", message => {
             message.channel.send(args);
     }
 });
+.
 
 baktash.login(process.env.BOT_TOKEN);
